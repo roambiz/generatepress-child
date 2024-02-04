@@ -2,7 +2,7 @@
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
 !amdin/
-
+/SASS/
 # archive/*
 # !archive/deprecated/
 # !archive/legacy/

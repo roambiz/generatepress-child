@@ -1,0 +1,50 @@
+/***
+ * Theme Name:        Generatepress Child
+ * Template:          generatepress
+ * Theme URI:         https://github.com/roambiz/generatepress_child
+ * Description:       GeneratePress Child Theme. [Brand Custom Edition: No Updates Allowed!]
+ * Version:           1.0.0
+ * Author:            Singa
+ * Author URI:        https://roambiz.com/
+ * Text Domain:       generatepress
+ * Domain Path:       /assets/lang
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v3.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * @ref: https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library
+ * 
+ * ========== ========== Child Theme Customization Starts Here ========== ========== */
+
+ /* Local Font */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/wp-content/themes/generatepress_child/assets/fonts/RobotoCondensed-VariableFont_wght.woff2") format("woff2");
+}
+
+/* ========== ========== ========== ========== ========== ========== ========== */
+
+/* ----- List ----- */
+ol,
+ul {
+  box-sizing: border-box;
+}
+ol.has-background,
+ul.has-background {
+  padding: 1.25em 2.375em;
+}
+
+/* ----- Preformatted ----- */
+.wp-block-preformatted {
+  box-sizing: border-box;
+  white-space: pre-wrap;
+}
+
+:where(.wp-block-preformatted.has-background) {
+  padding: 1.25em 2.375em;
+}

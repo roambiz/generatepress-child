@@ -18,9 +18,8 @@
  * 
  * ========== ========== Child Theme Customization Starts Here ========== ========== */
 
+@import "/SASS/fonts/local-fonts.scss";
 
- @import "/SASS/fonts/local-fonts.scss";
+@import "/SASS/src/list.scss";
 
- @import "/SASS/src/list.scss";
- 
- @import "/SASS/src/preformatted.scss";
+@import "/SASS/src/preformatted.scss";

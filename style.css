@@ -17,8 +17,9 @@
  * @ref: https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library
  * 
  * ========== ========== Child Theme Customization Starts Here ========== ========== */
-
- /* Local Font */
+/*
+ *  === Local Font ===
+ */
 @font-face {
   font-display: swap;
   font-family: "Roboto Condensed";
@@ -26,9 +27,6 @@
   font-weight: 400;
   src: url("/wp-content/themes/generatepress_child/assets/fonts/RobotoCondensed-VariableFont_wght.woff2") format("woff2");
 }
-
-/* ========== ========== ========== ========== ========== ========== ========== */
-
 /* ----- List ----- */
 ol,
 ul {

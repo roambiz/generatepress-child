@@ -5,7 +5,7 @@ Creating Child Themes with Stylistic Features for GeneratePress.
 Note：Development Convention: Consistent Use of Hyphen (-) for Naming
 > [Download 0.1.0](https://github.com/roambiz/generatepress-child/releases/tag/0.1.0)
 
-## Extensions List
+##扩展包列表
 - Disable all
 - Facade
 
@@ -20,7 +20,7 @@ Note：Development Convention: Consistent Use of Hyphen (-) for Naming
 // Disable Page Select
 function add_page_right_select_js_inline_script() {
 	echo '<script defer src="
-		' . get_stylesheet_directory_uri() . '/extensions/disable-all/disable-page-select.js
+		' . get_stylesheet_directory_uri() . '/extensions/components/disable-all/disable-page-select.js
 	"></script>';
 }
 add_action( 'wp_footer', 'add_page_right_select_js_inline_script', 999  );
@@ -28,7 +28,7 @@ add_action( 'wp_footer', 'add_page_right_select_js_inline_script', 999  );
 // Disable Right Click
 function add_disable_right_click_js_inline_script() {
 	echo '<script defer src="
-		' . get_stylesheet_directory_uri() . '/extensions/disable-all/disable-right-click.js
+		' . get_stylesheet_directory_uri() . '/extensions/components/disable-all/disable-right-click.js
 	"></script>';
 }
 add_action( 'wp_footer', 'add_disable_right_click_js_inline_script', 999  );
@@ -40,7 +40,7 @@ add_action( 'wp_footer', 'add_disable_right_click_js_inline_script', 999  );
 ```
 wp_enqueue_style(  
 	'lite-yt-embed', 
-	get_stylesheet_directory_uri() . '/extensions/facade/lite-yt-embed.css', 
+	get_stylesheet_directory_uri() . '/extensions/components/facade/lite-yt-embed.css', 
 	array(), 
 	'1.0.0', 
 	'print' 
@@ -48,7 +48,7 @@ wp_enqueue_style(
 
 wp_enqueue_script(
 	 'lite-yt-embed', 
-	get_stylesheet_directory_uri() . '/extensions/facade/lite-yt-embed.js', 
+	get_stylesheet_directory_uri() . '/extensions/components/facade/lite-yt-embed.js', 
 	array(), 
 	'1.0.0', 
 	array(

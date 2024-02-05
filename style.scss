@@ -15,12 +15,12 @@
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  *
  * @ref: https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library
- *
+ * 
  * ========== ========== Child Theme Customization Starts Here ========== ========== */
 
 
- @import "./SASS/fonts/local-fonts.scss";
+ @import "/SASS/fonts/local-fonts.scss";
 
- @import "./SASS/src/list.scss";
+ @import "/SASS/src/list.scss";
  
- @import "./SASS/src/preformatted.scss";
+ @import "/SASS/src/preformatted.scss";

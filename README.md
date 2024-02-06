@@ -6,14 +6,14 @@ Note：Development Convention: Consistent Use of Hyphen (-) for Naming
 > [Download 0.1.0](https://github.com/roambiz/generatepress-child/releases/tag/0.1.0)
 
 ##扩展包列表
-- Disable all
+- Disabler
 - Facade
 
 <!-- ---------- ---------- 我是分割线 ---------- ---------- -->
 
 ### How To Use Child Theme Extensions
 
-// === Disable All === //
+// === Disabler === //
 >说明：
 >需要使用时，安装[ Code Snippets ]插件，新建两个片段，分别放入下列代码，方便开启关闭。
 ```

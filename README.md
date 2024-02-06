@@ -20,7 +20,7 @@ Note：Development Convention: Consistent Use of Hyphen (-) for Naming
 // Disable Page Select
 function add_page_right_select_js_inline_script() {
 	echo '<script defer src="
-		' . get_stylesheet_directory_uri() . '/extensions/components/disable-all/disable-page-select.js
+		' . get_stylesheet_directory_uri() . '/extensions/components/disabler/disable-page-select.js
 	"></script>';
 }
 add_action( 'wp_footer', 'add_page_right_select_js_inline_script', 999  );
@@ -28,7 +28,7 @@ add_action( 'wp_footer', 'add_page_right_select_js_inline_script', 999  );
 // Disable Right Click
 function add_disable_right_click_js_inline_script() {
 	echo '<script defer src="
-		' . get_stylesheet_directory_uri() . '/extensions/components/disable-all/disable-right-click.js
+		' . get_stylesheet_directory_uri() . '/extensions/components/disabler/disable-right-click.js
 	"></script>';
 }
 add_action( 'wp_footer', 'add_disable_right_click_js_inline_script', 999  );

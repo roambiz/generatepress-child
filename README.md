@@ -5,7 +5,7 @@ Creating Child Themes with Stylistic Features for GeneratePress.
 Note：Development Convention: Consistent Use of Hyphen (-) for Naming
 > [Download 0.1.0](https://github.com/roambiz/generatepress-child/releases/tag/0.1.0)
 
-##扩展包列表
+## 扩展包列表
 - Disabler
 - Facade
 

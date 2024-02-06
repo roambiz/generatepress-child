@@ -1,13 +1,16 @@
 <?php
-/* 
- * File: cust_perf_optimize.php
+/* *
+ * File: gp_theme_perf_optimize.php
  * Author: Singa
  * Description: Website Performance Optimization.
  * Note: The configuration of this file needs to be tailored for each website.
- * Site: https://www.balford.net/
- */
+ * 
+ * === Customized For ===
+ * @domain: ---
+ * 
+ * */
 
-// Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. 
+# Preload the LCP resources with a high fetch priority to ensure they start loading with the stylesheet.
 function add_preload_tags_for_lcp_resources() {
     $lcp_link_tags = array(
         //"<link rel='preload' fetchpriority='high' as='image' href='#' type='image/webp'>",
@@ -21,8 +24,8 @@ function add_preload_tags_for_lcp_resources() {
     }
 }
 
-// Remove core block styles from the front-end
-function critical_remove_core_block_styles() {
+# Remove core block styles from the front-end
+function remove_core_block_non_critical_styles() {
     global $wp_styles;
 
     // Loop through the style queue
@@ -35,7 +38,7 @@ function critical_remove_core_block_styles() {
     }
 }
 // Hook the function to the 'wp_enqueue_scripts' action
-add_action( 'wp_enqueue_scripts', 'critical_remove_core_block_styles' );
+add_action( 'wp_enqueue_scripts', 'remove_core_block_non_critical_styles' );
 
 
 // END //

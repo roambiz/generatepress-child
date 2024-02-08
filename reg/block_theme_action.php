@@ -31,12 +31,13 @@ add_action('admin_menu', function () {
     
     // Add reusable blocks nav menu
     add_menu_page(
-        'R-Block', 
-        'R-Block', 
+        'Custom Patterns', 
+        'Patterns', 
         'edit_posts', 
         'edit.php?post_type=wp_block', 
         '', 
-        'dashicons-excerpt-view'
+        'dashicons-excerpt-view',
+        '21'
     );
     
     // Remove widgets nav menu

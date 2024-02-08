@@ -2,32 +2,34 @@
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
  * File: block_theme_action.php
  * Description: Use "add_action" to attach a custom function to a specific action in WordPress.
+ * 
  * ref: https://developer.wordpress.org/reference/functions/add_action/
+ * 
  * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 
-// Disables the WordPress admin bar for all users except administrators.
+// Disables the WordPress admin toolbar for all users except administrators.
 add_action( 'wp', function () {
 	if ( ! current_user_can( 'manage_options' ) ) {
 		show_admin_bar( false );
 	}
 } );
 
-// Modify Admin Toolbar Menu
+// Modify admin toolbar menu
 add_action('admin_bar_menu', function ($wp_admin_bar) {
     // Remove widgets menu from the toolbar
     $wp_admin_bar->remove_menu('widgets');
 }, 99);
 
-// Modify Customizer Panel
+// Modify customizer panel
 add_action('customize_register', function ($wp_customize) {
-    // Remove widgets panel from the Customizer
+    // Remove widgets panel from customizer
     $wp_customize->remove_panel('widgets');
 }, 99);
 
-// Modify Dashboard Admin Menu Selection
+// Modify dashboard admin menu selection
 add_action('admin_menu', function () {
     
-    // Add Reusable Blocks Menu
+    // Add reusable blocks nav menu
     add_menu_page(
         'R-Block', 
         'R-Block', 
@@ -37,7 +39,7 @@ add_action('admin_menu', function () {
         'dashicons-excerpt-view'
     );
     
-    // Remove Widgets Menu
+    // Remove widgets nav menu
     remove_submenu_page(
         'themes.php', 
         'widgets.php'

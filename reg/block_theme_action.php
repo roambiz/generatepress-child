@@ -36,7 +36,7 @@ add_action('admin_menu', function () {
         'dashicons-excerpt-view'
     );
     
-    // Add a menu page for Other
+    // Remove Widgets menu
     remove_submenu_page(
         'themes.php', 
         'widgets.php'

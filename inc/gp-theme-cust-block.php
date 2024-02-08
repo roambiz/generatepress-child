@@ -10,7 +10,6 @@
  * @domain: ---
  * 
  * */
-<?php
 namespace GeneratePressChild;
 
 class Block {

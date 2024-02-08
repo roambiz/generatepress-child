@@ -4,7 +4,8 @@
  * Author: Singa
  * Description: Customize the panel and settings options of the Gutenberg editor's core blocks.
  * Note: The configuration of this file needs to be tailored for each website.
- * 
+ * https://developer.wordpress.org/block-editor/reference-guides/core-blocks/
+ * https://developer.wordpress.org/reference/hooks/allowed_block_types_all/
  * === Customized For ===
  * @domain: ---
  * 
@@ -13,7 +14,7 @@ namespace GeneratePressChild;
 
 class Block {
     public static function init() {
-        add_filter( 'allowed_block_types_all', array( $this, 'core_block_types' ), 10, 2 );
+        add_filter( 'allowed_block_types_all', array( __CLASS__, 'core_block_types' ), 10, 2 );
     }
 
     public function core_block_types( $allowed_block_types, $editor_context ) {

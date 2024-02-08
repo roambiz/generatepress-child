@@ -21,11 +21,27 @@ class Block {
         if ( 'post' === $editor_context->post->post_type ) {
             // Allow specified block types
             return array(
+                // TEXT
                 'core/paragraph',
                 'core/list',
-                'core/image',
-                'core/buttons',
-                'core/quote',
+                'core/code',
+                'core/preformatted'
+                'core/table',
+                'core/footnotes',
+                // MEDIA
+                'core/gallery',
+                'core/file',
+                // DESIGN
+                'core/nextpage',
+                'core/spacer',
+                // WIDGETS
+                'core/html',
+                'core/latest-posts',
+                'core/search',
+                'core/shortcode',
+                'core/social-link',
+                'core/social-links',
+                'core/tag-cloud',
             );
         }
 
@@ -33,10 +49,24 @@ class Block {
         if ( 'page' === $editor_context->post->post_type ) {
             // Allow specified block types
             return array(
+                // TEXT
                 'core/paragraph',
                 'core/list',
-                'core/image',
-                'core/buttons',
+                'core/code',
+                'core/preformatted'
+                'core/table',
+                'core/footnotes',
+                // MEDIA
+                'core/gallery',
+                'core/file',
+                // DESIGN
+                'core/nextpage',
+                'core/spacer',
+                // WIDGETS
+                'core/html',
+                'core/search',
+                'core/shortcode',
+
             );
         }
 
@@ -44,11 +74,26 @@ class Block {
         if ( 'seo-project' === $editor_context->post->post_type ) {
             // Allow specified block types
             return array(
+                // TEXT
                 'core/paragraph',
                 'core/list',
-                'core/image',
-                'core/buttons',
-                'core/quote',
+                'core/code',
+                'core/preformatted'
+                'core/table',
+                'core/footnotes',
+                // MEDIA
+                'core/gallery',
+                'core/file',
+                // DESIGN
+                'core/nextpage',
+                'core/spacer',
+                // WIDGETS
+                'core/html',
+                'core/search',
+                'core/shortcode',
+                'core/social-link',
+                'core/social-links',
+                'core/tag-cloud',
             );
         }
 

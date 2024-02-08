@@ -22,5 +22,4 @@ add_action( 'wp', function() {
 
 
 
-// END //
-?>
+// Supp End //

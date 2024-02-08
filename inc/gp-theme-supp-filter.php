@@ -30,5 +30,4 @@ add_filter( 'render_block', function( $content, $block ) {
 	return $content;
 }, 10, 2 );
 
-// END //
-?>
+// Supp End //

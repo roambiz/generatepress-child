@@ -1,15 +1,26 @@
 <?php
-/* *
- * File: gp_theme_feats_supp.php
+/* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
+ * File: gp_theme_feats_sup.php
  * Description: Customizes the features supported by the GP theme.
- * Author: Singa
  * 
- * */
+ * ref: 
+ * 
+ * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 
-// This will prevent the default comments template from being displayed in the GeneratePress theme.
+/* ============================================
+ * Element Editor Optimization
+ * ============================================*/ 
+
+// Remove comments template from element editor
 add_action( 'wp', function() {
     remove_action( 'generate_after_do_template_part', 'generate_do_comments_template', 15 );
 } );
+
+/* ============================================
+ * Add Default --- for Child Theme
+ * ============================================*/ 
+
+
 
 // END //
 ?>

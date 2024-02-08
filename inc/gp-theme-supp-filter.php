@@ -1,13 +1,22 @@
 <?php
-/* *
+/* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
  * File: gp-theme-supp-filter.php
- * Description: 
- * Author: Singa
+ * Description: Use "filter" to modify or filter specific values in WordPress.
  * 
- * */
+ * ref: https://docs.generatepress.com/article/using-filters/
+ * 
+ * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 
-// Add own schema
+// Disable default schema
 add_filter( 'generate_schema_type', '__return_false' );
+
+// Disable fontawesome library
+add_filter( 'generate_fontawesome_essentials', '__return_true' );
+
+// Remove the GP Dashboard for non super admins
+add_filter( 'generate_dashboard_page_capability', function() {
+    return 'manage_sites';
+} );
 
 // Convert "nofollow" to "me" under a specific class name
 add_filter( 'render_block', function( $content, $block ) {
@@ -20,6 +29,12 @@ add_filter( 'render_block', function( $content, $block ) {
 
 	return $content;
 }, 10, 2 );
+
+add_filter( 'generate_editor_styles', function( $editor_styles ) {
+    $editor_styles[] = 'style.css';
+
+    return $editor_styles;
+} );
 
 // END //
 ?>

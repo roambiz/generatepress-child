@@ -53,7 +53,7 @@ class Block {
                 'core/paragraph',
                 'core/list',
                 'core/code',
-                'core/preformatted'
+                'core/preformatted',
                 'core/table',
                 'core/footnotes',
                 // MEDIA
@@ -78,7 +78,7 @@ class Block {
                 'core/paragraph',
                 'core/list',
                 'core/code',
-                'core/preformatted'
+                'core/preformatted',
                 'core/table',
                 'core/footnotes',
                 // MEDIA

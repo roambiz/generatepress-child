@@ -2,6 +2,7 @@
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
  * File: block_theme_action.php
  * Description: Use "add_action" to attach a custom function to a specific action in WordPress.
+ * ref: https://developer.wordpress.org/reference/functions/add_action/
  * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 
 // Disables the WordPress admin bar for all users except administrators.
@@ -26,7 +27,7 @@ add_action('customize_register', function ($wp_customize) {
 // Modify Dashboard Admin Menu Selection
 add_action('admin_menu', function () {
     
-    // Add a menu page for Reusable Blocks
+    // Add Reusable Blocks Page Menu
     add_menu_page(
         'R-Block', 
         'R-Block', 
@@ -36,7 +37,7 @@ add_action('admin_menu', function () {
         'dashicons-excerpt-view'
     );
     
-    // Remove Widgets menu
+    // Remove Widgets Page Menu
     remove_submenu_page(
         'themes.php', 
         'widgets.php'
@@ -44,4 +45,4 @@ add_action('admin_menu', function () {
 
 }, 99);
 
-# action end
+# Action End

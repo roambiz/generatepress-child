@@ -2,6 +2,7 @@
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
  * File: block_theme_filter.php
  * Description: Use "filter" to modify or filter specific values in WordPress.
+ * ref: https://developer.wordpress.org/reference/functions/add_filter/
  * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 
 // Ensures uploaded filenames are lowercase.
@@ -13,4 +14,4 @@ add_filter( 'wp_revisions_to_keep', function ( $num, $post ) {
     return $num ?? 15;
 }, 10, 2 );
 
-# filter end
+# Filter End

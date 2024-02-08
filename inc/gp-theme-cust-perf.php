@@ -1,6 +1,6 @@
 <?php
 /* *
- * File: gp_theme_perf_optimize.php
+ * File: gp-theme-cust-perf.php
  * Author: Singa
  * Description: Website Performance Optimization.
  * Note: The configuration of this file needs to be tailored for each website.

@@ -1,6 +1,6 @@
 <?php
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
- * File: block_theme_support.php
+ * File: block-theme-support.php
  * Description: Registers theme support for a given feature.
  * 
  * ref: https://developer.wordpress.org/reference/functions/add_theme_support/

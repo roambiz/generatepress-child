@@ -30,11 +30,5 @@ add_filter( 'render_block', function( $content, $block ) {
 	return $content;
 }, 10, 2 );
 
-add_filter( 'generate_editor_styles', function( $editor_styles ) {
-    $editor_styles[] = 'style.css';
-
-    return $editor_styles;
-} );
-
 // END //
 ?>

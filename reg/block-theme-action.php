@@ -1,6 +1,6 @@
 <?php
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
- * File: block_theme_action.php
+ * File: block-theme-action.php
  * Description: Use "add_action" to attach a custom function to a specific action in WordPress.
  * 
  * ref: https://developer.wordpress.org/reference/functions/add_action/

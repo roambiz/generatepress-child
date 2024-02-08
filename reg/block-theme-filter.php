@@ -1,6 +1,6 @@
 <?php
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
- * File: block_theme_filter.php
+ * File: block-theme-filter.php
  * Description: Use "filter" to modify or filter specific values in WordPress.
  * 
  * ref: https://developer.wordpress.org/reference/functions/add_filter/

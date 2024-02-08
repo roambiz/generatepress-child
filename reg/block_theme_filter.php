@@ -2,9 +2,7 @@
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
  * File: block_theme_filter.php
  * Description: Use "filter" to modify or filter specific values in WordPress.
- * 
  * ref: https://developer.wordpress.org/reference/functions/add_filter/
- * 
  * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 
 // Ensures uploaded filenames are lowercase.

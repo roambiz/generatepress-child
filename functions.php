@@ -20,4 +20,15 @@
  # Main Functionality and Definitions
  # ===================================
  
-// Referencing default functionality functions within the child theme
+// Referencing a file stored within the child theme directory
+require_once get_stylesheet_directory() . '/reg/block-theme-action.php';
+require_once get_stylesheet_directory() . '/reg/block-theme-filter.php';
+require_once get_stylesheet_directory() . '/reg/block-theme-support.php';
+
+// Referencing a file stored within the child theme directory
+require_once get_stylesheet_directory() . '/inc/gp-theme-func-action.php';
+require_once get_stylesheet_directory() . '/inc/gp-theme-func-filter.php';
+
+// Referencing a file stored within the child theme directory
+require get_stylesheet_directory() . '/inc/gp-theme-cust-block.php';
+require get_stylesheet_directory() . '/inc/gp-theme-cust-perf.php';

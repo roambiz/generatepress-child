@@ -1,6 +1,6 @@
 <?php
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
- * File: gp-theme-supp-feats.php
+ * File: gp-theme-func-action.php
  * Description: Customizes the features supported by the GP theme.
  * 
  * Reference: 

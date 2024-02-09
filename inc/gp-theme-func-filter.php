@@ -1,6 +1,6 @@
 <?php
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
- * File: gp-theme-supp-filter.php
+ * File: gp-theme-func-filter.php
  * Description: Use "filter" to modify or filter specific values in WordPress.
  * 
  * Reference: 

@@ -92,7 +92,7 @@ class Block {
         );
 
         // Check if GenerateBlocks plugin is active
-        if ( is_plugin_active( 'generateblocks/generateblocks.php' ) ) {
+        if ( is_plugin_active( 'generateblocks/plugin.php' ) ) {
             // GenerateBlocks plugin is active, allow GenerateBlocks block types
             $generateblocks_block_types = array(
                 'generateblocks/container',
@@ -104,7 +104,6 @@ class Block {
                 'generateblocks/image',
                 'generatepress/dynamic-content',
                 'generatepress/dynamic-image',
-                'contact-form-7/contact-form-selector',
             );
         }
 

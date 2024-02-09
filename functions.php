@@ -12,7 +12,7 @@
  * Note: 
  * @link https://github.com/tomusborne/generatepress
  * @package GeneratePressChild
- * @since GeneratePress 3.3.1
+ * @since GeneratePress 3.4.0
  * * *-------------------------------------------------------------------------------------------------------------- */
 
 

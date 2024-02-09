@@ -38,10 +38,16 @@ require get_stylesheet_directory() . '/inc/gp-theme-cust-shortcode.php';
  # Function Class Instantiation Management
  # ========================================
 
-GeneratePressChild/Block::inst()
-GeneratePressChild/Html::inst()
-GeneratePressChild/wordpress::inst()
+//  Import the classes you need from the namespace.
+use GeneratePressChild\Block;
+use GeneratePressChild\Html;
+use GeneratePressChild\wordpress;
+
+// Initialize the functions you need.
+Block::inst();
+Html::inst();
+wordpress::inst();
 
  # ========================================
- # Function Class Instantiation Management
+ # Other Referencing Management
  # ========================================

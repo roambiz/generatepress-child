@@ -32,6 +32,7 @@ require_once get_stylesheet_directory() . '/inc/gp-theme-func-filter.php';
 // Referencing function files to support customized block editor.
 require get_stylesheet_directory() . '/inc/gp-theme-cust-block.php';
 require get_stylesheet_directory() . '/inc/gp-theme-cust-perf.php';
+require get_stylesheet_directory() . '/inc/gp-theme-cust-shortcode.php';
 
  # ========================================
  # Function Class Instantiation Management
@@ -40,3 +41,7 @@ require get_stylesheet_directory() . '/inc/gp-theme-cust-perf.php';
 GeneratePressChild/Block::inst()
 GeneratePressChild/Html::inst()
 GeneratePressChild/wordpress::inst()
+
+ # ========================================
+ # Function Class Instantiation Management
+ # ========================================

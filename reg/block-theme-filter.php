@@ -17,4 +17,8 @@ add_filter( 'wp_revisions_to_keep', function ( $num, $post ) {
     return $num ?? 15;
 }, 10, 2 );
 
+// Remove link color setting
+remove_filter( 'render_block', 'wp_render_elements_support', 10, 2 );
+remove_filter( 'render_block', 'gutenberg_render_elements_support', 10, 2 );
+
 # Filter End

@@ -7,6 +7,7 @@
  * 
  * Reference: 
  * @link: 
+ * @link: https://fullsiteediting.com/lessons/how-to-remove-default-block-styles/
  * 
  * === Customized For ===
  * @domain: ---
@@ -44,10 +45,33 @@ class Wordpress {
     public function remove_non_critical_css() {
         global $wp_styles;
 
+        $excluded_handles = array( 
+            'wp-paragraph',
+            'wp-list',
+            'wp-code',
+            'wp-preformatted',
+            'wp-table',
+            'wp-footnotes',
+            // MEDIA
+            'wp-gallery',
+            'wp-file',
+            // DESIGN
+            'wp-nextpage',
+            'wp-spacer',
+            // WIDGETS
+            'wp-html',
+            'wp-latest-posts',
+            'wp-search',
+            'wp-shortcode',
+            'wp-social-link',
+            'wp-social-links',
+            'wp-tag-cloud',
+        );
+
         // Loop through the style queue
         foreach ( $wp_styles->queue as $key => $handle ) {
             // Check if the handle starts with 'wp-block-'
-            if ( strpos( $handle, 'wp-block-' ) === 0 ) {
+            if ( strpos( $handle, 'wp-block-' )  === 0 && ! in_array( $handle, $excluded_handles ) )  {
             // Dequeue the style if it is a core block style
                 wp_dequeue_style( $handle );
             }

@@ -16,7 +16,7 @@
 namespace GeneratePressChild;
 
 class Block {
-    public static function init() {
+    public static function inst() {
         add_filter( 'allowed_block_types_all', array( __CLASS__, 'core_block_types' ), 10, 2 );
     }
 

@@ -20,15 +20,23 @@
  # Main Functionality and Definitions
  # ===================================
  
-// Referencing a file stored within the child theme directory
+// Referencing function files to support customized block themes.
 require_once get_stylesheet_directory() . '/reg/block-theme-action.php';
 require_once get_stylesheet_directory() . '/reg/block-theme-filter.php';
 require_once get_stylesheet_directory() . '/reg/block-theme-support.php';
 
-// Referencing a file stored within the child theme directory
+// Referencing function files to support customized GP themes.
 require_once get_stylesheet_directory() . '/inc/gp-theme-func-action.php';
 require_once get_stylesheet_directory() . '/inc/gp-theme-func-filter.php';
 
-// Referencing a file stored within the child theme directory
+// Referencing function files to support customized block editor.
 require get_stylesheet_directory() . '/inc/gp-theme-cust-block.php';
 require get_stylesheet_directory() . '/inc/gp-theme-cust-perf.php';
+
+ # ========================================
+ # Function Class Instantiation Management
+ # ========================================
+
+GeneratePressChild/Block::inst()
+GeneratePressChild/Html::inst()
+GeneratePressChild/wordpress::inst()

@@ -15,7 +15,7 @@
 namespace GeneratePressChild;
 
 class Html {
-    public static function init() {
+    public static function inst() {
         $html = new self();
         add_action( 'wp_enqueue_scripts', array( $html, 'add_tags' ) );
     }
@@ -36,7 +36,7 @@ class Html {
 
 class Wordpress {
     // Hook the function to the 'wp_enqueue_scripts' action
-    public static function init() {
+    public static function inst() {
         $wordpress = new self();
         add_action( 'wp_enqueue_scripts', array( $wordpress, 'remove_non_critical_css' ) );
     }

@@ -3,7 +3,8 @@
  * File: gp-theme-supp-feats.php
  * Description: Customizes the features supported by the GP theme.
  * 
- * ref: 
+ * Reference: 
+ * @link: 
  * 
  * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 

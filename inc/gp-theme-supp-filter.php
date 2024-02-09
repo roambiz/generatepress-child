@@ -3,7 +3,8 @@
  * File: gp-theme-supp-filter.php
  * Description: Use "filter" to modify or filter specific values in WordPress.
  * 
- * ref: https://docs.generatepress.com/article/using-filters/
+ * Reference: 
+ * @link: https://docs.generatepress.com/article/using-filters/
  * 
  * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 

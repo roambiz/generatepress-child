@@ -46,26 +46,26 @@ class Wordpress {
         global $wp_styles;
 
         $excluded_handles = array( 
-            'wp-paragraph',
-            'wp-list',
-            'wp-code',
-            'wp-preformatted',
-            'wp-table',
-            'wp-footnotes',
+            'wp-block-paragraph',
+            'wp-block-list',
+            'wp-block-code',
+            'wp-block-preformatted',
+            'wp-block-table',
+            'wp-block-footnotes',
             // MEDIA
-            'wp-gallery',
-            'wp-file',
+            'wp-block-gallery',
+            'wp-block-file',
             // DESIGN
-            'wp-nextpage',
-            'wp-spacer',
+            'wp-block-block-nextpage',
+            'wp-block-spacer',
             // WIDGETS
-            'wp-html',
-            'wp-latest-posts',
-            'wp-search',
-            'wp-shortcode',
-            'wp-social-link',
-            'wp-social-links',
-            'wp-tag-cloud',
+            'wp-block-html',
+            'wp-block-latest-posts',
+            'wp-block-search',
+            'wp-block-shortcode',
+            'wp-block-social-link',
+            'wp-block-social-links',
+            'wp-block-tag-cloud',
         );
 
         // Loop through the style queue

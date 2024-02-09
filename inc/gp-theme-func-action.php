@@ -23,4 +23,4 @@ add_action( 'wp', function() {
 
 
 
-// Supp End //
+// Func End //

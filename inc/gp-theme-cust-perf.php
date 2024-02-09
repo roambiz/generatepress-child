@@ -1,5 +1,5 @@
 <?php
-/* *
+/* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
  * File: gp-theme-cust-perf.php
  * Author: Singa
  * Description: Website Performance Optimization.
@@ -11,7 +11,7 @@
  * === Customized For ===
  * @domain: ---
  * 
- * */
+ * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 namespace GeneratePressChild;
 
 class Html {
@@ -55,5 +55,4 @@ class Wordpress {
     }
 }
 
-// END //
-?>
+// Cust End //

@@ -1,5 +1,5 @@
 <?php
-/* *
+/* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
  * File: gp-theme-cust-block.php
  * Author: Singa
  * Description: Customize the panel and settings options of the Gutenberg editor's core blocks.
@@ -12,7 +12,7 @@
  * === Customized For ===
  * @domain: ---
  * 
- * */
+ * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 namespace GeneratePressChild;
 
 class Block {
@@ -148,4 +148,4 @@ class Block {
     }
 }
 
-// 
+// Cust End //

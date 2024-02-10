@@ -29,13 +29,11 @@ class Block {
             // TEXT
             'core/paragraph',
             'core/list',
+            'core/list-item',
             'core/code',
             'core/preformatted',
             'core/table',
             'core/footnotes',
-            // MEDIA
-            'core/gallery',
-            'core/file',
             // DESIGN
             'core/nextpage',
             'core/spacer',
@@ -54,13 +52,11 @@ class Block {
             // TEXT
             'core/paragraph',
             'core/list',
+            'core/list-item',
             'core/code',
             'core/preformatted',
             'core/table',
             'core/footnotes',
-            // MEDIA
-            'core/gallery',
-            'core/file',
             // DESIGN
             'core/nextpage',
             'core/spacer',
@@ -75,13 +71,11 @@ class Block {
             // TEXT
             'core/paragraph',
             'core/list',
+            'core/list-item',
             'core/code',
             'core/preformatted',
             'core/table',
             'core/footnotes',
-            // MEDIA
-            'core/gallery',
-            'core/file',
             // DESIGN
             'core/nextpage',
             'core/spacer',

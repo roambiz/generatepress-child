@@ -45,35 +45,13 @@ class Wordpress {
     public function remove_non_critical_css() {
         global $wp_styles;
 
-        $excluded_handles = array( 
-            'wp-block-paragraph',
-            'wp-block-list',
-            'wp-block-code',
-            'wp-block-preformatted',
-            'wp-block-table',
-            'wp-block-footnotes',
-            // MEDIA
-            'wp-block-gallery',
-            'wp-block-file',
-            // DESIGN
-            'wp-block-block-nextpage',
-            'wp-block-spacer',
-            // WIDGETS
-            'wp-block-html',
-            'wp-block-latest-posts',
-            'wp-block-search',
-            'wp-block-shortcode',
-            'wp-block-social-link',
-            'wp-block-social-links',
-            'wp-block-tag-cloud',
-        );
-
         // Loop through the style queue
         foreach ( $wp_styles->queue as $key => $handle ) {
             // Check if the handle starts with 'wp-block-'
-            if ( strpos( $handle, 'wp-block-' )  === 0 && ! in_array( $handle, $excluded_handles ) )  {
-            // Dequeue the style if it is a core block style
+            if ( strpos( $handle, 'wp-block-' ) === 0 ) {
+            // Dequeue all core block style
                 wp_dequeue_style( $handle );
+                wp_dequeue_style( 'global-styles' );
             }
         }
     }

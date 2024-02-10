@@ -1,4 +1,4 @@
-/***
+/* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
  * Theme Name:        Generatepress Child
  * Template:          generatepress
  * Theme URI:         https://github.com/roambiz/generatepress_child
@@ -16,10 +16,12 @@
  *
  * @ref: https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library
  * 
- * ========== ========== Child Theme Customization Starts Here ========== ========== */
+ * ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— */
 
 @import "/SASS/fonts/local-fonts.scss";
 
 @import "/SASS/src/list.scss";
 
 @import "/SASS/src/preformatted.scss";
+
+@import "/SASS/src/code.scss";

@@ -49,8 +49,9 @@ class Wordpress {
         foreach ( $wp_styles->queue as $key => $handle ) {
             // Check if the handle starts with 'wp-block-'
             if ( strpos( $handle, 'wp-block-' ) === 0 ) {
-            // Dequeue all core block style
+                // Dequeue all core block style
                 wp_dequeue_style( $handle );
+                // Dequeue global inline styles
                 wp_dequeue_style( 'global-styles' );
             }
         }

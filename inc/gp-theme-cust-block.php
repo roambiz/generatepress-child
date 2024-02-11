@@ -20,35 +20,12 @@ class Block {
         add_filter( 'allowed_block_types_all', array( __CLASS__, 'core_block_types' ), 10, 2 );
     }
 
-    public function core_block_types( $allowed_block_types, $editor_context ) {
+    public static function core_block_types( $allowed_block_types, $editor_context ) {
         // Define an empty array by default
         $generateblocks_block_types = array();
 
         // Define an array for post
-        $cust_core_block_types_for_post = array(
-            // TEXT
-            'core/paragraph',
-            'core/list',
-            'core/list-item',
-            'core/code',
-            'core/preformatted',
-            'core/table',
-            'core/footnotes',
-            // DESIGN
-            'core/nextpage',
-            'core/spacer',
-            // WIDGETS
-            'core/html',
-            'core/latest-posts',
-            'core/search',
-            'core/shortcode',
-            'core/social-link',
-            'core/social-links',
-            'core/tag-cloud',
-        );
-
-        // Define an array for page
-        $cust_core_block_types_for_page = array(
+        $cust_core_block_types_for_all = array(
             // TEXT
             'core/paragraph',
             'core/list',
@@ -64,32 +41,10 @@ class Block {
             'core/html',
             'core/search',
             'core/shortcode',
-        );
-
-        // Define an array for seo-project
-        $cust_core_block_types_for_seo_project = array(
-            // TEXT
-            'core/paragraph',
-            'core/list',
-            'core/list-item',
-            'core/code',
-            'core/preformatted',
-            'core/table',
-            'core/footnotes',
-            // DESIGN
-            'core/nextpage',
-            'core/spacer',
-            // WIDGETS
-            'core/html',
-            'core/search',
-            'core/shortcode',
-            'core/social-link',
-            'core/social-links',
-            'core/tag-cloud',
         );
 
         // Check if GenerateBlocks plugin is active
-        if ( is_plugin_active( 'generateblocks/plugin.php' ) ) {
+        if ( function_exists('is_plugin_active') && is_plugin_active('generateblocks/plugin.php') ) {
             // GenerateBlocks plugin is active, allow GenerateBlocks block types
             $generateblocks_block_types = array(
                 'generateblocks/container',
@@ -111,7 +66,14 @@ class Block {
                 // GENERATEBLOCKS
                 $generateblocks_block_types,
                 // POST
-                $cust_core_block_types_for_post
+                $cust_core_block_types_for_all,
+                // GUTENBERG
+                [
+                'core/social-link',
+                'core/social-links',
+                'core/tag-cloud',
+                'core/latest-posts',
+                ]
             );
         }
 
@@ -122,7 +84,7 @@ class Block {
                 // GENERATEBLOCKS
                 $generateblocks_block_types,
                 // PAGE
-                $cust_core_block_types_for_page
+                $cust_core_block_types_for_all,
             );
         }
 
@@ -133,7 +95,13 @@ class Block {
                 // GENERATEBLOCKS
                 $generateblocks_block_types,
                 // SEO-PROJECT
-                $cust_core_block_types_for_seo_project
+                $cust_core_block_types_for_all,
+                // GUTENBERG
+                [
+                'core/social-link',
+                'core/social-links',
+                'core/tag-cloud',
+                ]
             );
         }
 

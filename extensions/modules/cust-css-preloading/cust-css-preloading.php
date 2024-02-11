@@ -3,8 +3,8 @@
  * Module:                  cust-css-preloading.php
  * Author:                  Singa
  * Documentation:           https://manual.roambiz.com/
- * Tested up to:            7.3
- * Requires at least:       7.3
+ * Requires at least:       6.3
+ * Tested up to:            6.4
  * Requires PHP:            7.4
  * 
  * Description: 

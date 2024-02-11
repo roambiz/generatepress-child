@@ -53,6 +53,7 @@ class Wordpress {
                 wp_dequeue_style( $handle );
                 // Dequeue global inline styles
                 wp_dequeue_style( 'global-styles' );
+                wp_dequeue_style( 'classic-theme-styles' );
             }
         }
     }

@@ -19,13 +19,6 @@ add_filter( 'generate_dashboard_page_capability', function() {
     return 'manage_sites';
 } );
 
-// Add font families to the system/default list in the Customizer.
-add_filter( 'generate_typography_default_fonts','tu_add_system_fonts' );
-function tu_add_system_fonts( $fonts ) {
-    $fonts[] = 'Noto Sans SC';
-    return $fonts;
-}
-
 // Convert "nofollow" to "me" under a specific class name
 add_filter( 'render_block', function( $content, $block ) {
 	if ( 

@@ -52,7 +52,8 @@ wp_enqueue_script(
 	array(), 
 	'1.0.0', 
 	array(
-		'strategy' => 'async' 
+		'strategy' => 'async',
+        'in_footer' => true   
 	) 
 );
 ```

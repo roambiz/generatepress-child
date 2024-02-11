@@ -1,8 +1,11 @@
 <?php
 /* ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ———— ————
- * Module: cust-css-preloading.php
- * Author: Singa
- * Documentation: https://manual.roambiz.com/
+ * Module:                  cust-css-preloading.php
+ * Author:                  Singa
+ * Documentation:           https://manual.roambiz.com/
+ * Tested up to:            7.4
+ * Requires at least:       7.4
+ * Requires PHP:            7.4
  * 
  * Description: 
  * Implements CSS preloading for specified stylesheets to improve website performance by 

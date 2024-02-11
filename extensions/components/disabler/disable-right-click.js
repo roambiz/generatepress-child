@@ -8,13 +8,7 @@ document.addEventListener("copy", function(e) {
 });
 
 document.addEventListener("keydown", function(e) {
-  if (e.key === "F12") {
-    e.preventDefault();
-  }
-});
-
-document.addEventListener("keydown", function(e) {
-  if (e.code === "F12") {
+  if (e.key === "F12" || e.code === "F12") {
     e.preventDefault();
   }
 });

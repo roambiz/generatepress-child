@@ -7,8 +7,8 @@
  * Author:                  Singa
  * Author URI:              https://roambiz.com/
  * Tested up to:            7.4
- * Requires at least:       7.4
- * Requires PHP:            7.4
+ * Requires at least:       7.3
+ * Requires PHP:            7.3
  * License:                 GNU General Public License v3.0 or later
  * License URI:             https://www.gnu.org/licenses/gpl-3.0.html
  * 

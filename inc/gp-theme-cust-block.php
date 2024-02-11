@@ -26,6 +26,8 @@ class Block {
 
         // Define an array for post
         $cust_core_block_types_for_all = array(
+            // PATTERN
+            'core/block',
             // TEXT
             'core/paragraph',
             'core/list',

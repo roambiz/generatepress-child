@@ -3,34 +3,42 @@
 ///////////////////////////*/
 
 /* button class lift on hover */
-.button, .gb-button, .button-anime {
-    -webkit-transition: all 500ms ease-in-out !important;
-    transition: all 500ms ease-in-out !important;
+.button,
+.gb-button,
+.button-anime {
+	-webkit-transition: all 500ms ease-in-out !important;
+	transition: all 500ms ease-in-out !important;
 }
-.button:hover, .gb-button:hover, .button-anime:hover {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
+
+.button:hover,
+.gb-button:hover,
+.button-anime:hover {
+	-webkit-transform: translate3d(0, -4px, 0);
+	transform: translate3d(0, -4px, 0);
 }
 
 /* Popup Form Modal*/
 .modal-popup-content {
 	display: none;
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
 }
 
 /* Form 7  */
 textarea {
-    height: 6em;
+	height: 6em;
 }
+
+.wpcf7 input[type="tel"],
 .wpcf7 input[type="text"],
 .wpcf7 input[type="email"] {
-width: 100%;
+	width: 100%;
 }
+
 .wpcf7-form p {
-margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }

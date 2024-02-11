@@ -12,7 +12,6 @@
 add_theme_support( 'menus' );
 add_theme_support( 'editor-styles' );
 add_theme_support( 'featured-content' );
-
 add_theme_support( 'custom-units' );
 add_theme_support( 'custom-spacing' );
 add_theme_support( 'editor-gradient-presets' );

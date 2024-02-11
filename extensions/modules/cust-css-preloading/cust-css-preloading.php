@@ -30,7 +30,7 @@ add_filter('style_loader_tag', function ($html, $handle, $href, $media) {
             $preload_html = <<<HTML
             <link 
             rel="preload" 
-            fetchpriority='low'
+            fetchpriority="low"
             href="{$href}" 
             as="style" 
             id="{$handle}-preload" 

@@ -105,7 +105,7 @@ class Block {
         }
 
         // If the post type is the default post type ('post')
-        if ( 'post' === $editor_context->post->post_type ) {
+        if ( isset( $editor_context->post ) && 'post' === $editor_context->post->post_type ) {
             // Allow specified block types
             return array_merge(
                 // GENERATEBLOCKS
@@ -116,7 +116,7 @@ class Block {
         }
 
         // If the post type is the default page type ('page')
-        if ( 'page' === $editor_context->post->post_type ) {
+        if ( isset( $editor_context->post ) && 'page' === $editor_context->post->post_type )  {
             // Allow specified block types
             return array_merge(
                 // GENERATEBLOCKS
@@ -127,7 +127,7 @@ class Block {
         }
 
         // If the post type is the custom post type 'seo-project'
-        if ( 'seo-project' === $editor_context->post->post_type ) {
+        if ( isset( $editor_context->post ) && 'seo-project' === $editor_context->post->post_type ) {
             // Allow specified block types
             return array_merge(
                 // GENERATEBLOCKS

@@ -27,7 +27,7 @@
 	font-family: "Roboto Condensed";
 	font-style: normal;
 	font-weight: 400;
-	src: url("/wp-content/themes/generatepress_child/assets/fonts/RobotoCondensed/RobotoCondensed-VariableFont_wght.woff2") format("woff2");
+	src: url("assets/fonts/roboto-condensed/rcv-wght.woff2") format("woff2");
 }
 
 /* ----- Paragraph ----- */

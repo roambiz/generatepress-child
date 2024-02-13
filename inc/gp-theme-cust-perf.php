@@ -26,22 +26,26 @@ class Html {
         $child_theme_dir = get_stylesheet_directory();
 
         $lcp_link_tags = array(
-            //"<link rel='preload' fetchpriority='high' as='image' href='#' type='image/webp'>",
-            //"<link rel='preload' fetchpriority='high' as='font' href='#' type='font/woff2' crossorigin='anonymous'>",
-            //"<link rel='preload' fetchpriority='low' as='video' href='#' type='video/mp4'>",
+           /* *
+            * Preload tag example
+            * "<link rel='preload' fetchpriority='high' as='image' href='#' type='image/webp'>",
+            * "<link rel='preload' fetchpriority='high' as='font' href='#' type='font/woff2' crossorigin='anonymous'>",
+            * "<link rel='preload' fetchpriority='low' as='video' href='#' type='video/mp4'>",
+            * */
             "<link 
             rel='preload' 
             fetchpriority='high' 
-            as='font' href='#' 
+            as='font' href='" . $child_theme_dir . "/assets/fonts/roboto/roboto-flex-v9-latin-regular.woff2' 
             type='font/woff2' 
             crossorigin='anonymous'
             >",
-
         );
 
         // Output preload link tags
         foreach ($lcp_link_tags as $tag) {
-            echo $tag;
+            add_action( 'wp_head', function() use ($tag) {
+                echo $tag;
+            });
         }
     }
 }

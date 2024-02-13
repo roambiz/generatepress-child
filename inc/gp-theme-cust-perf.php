@@ -22,10 +22,21 @@ class Html {
     }
 
     public static function add_tags() {
+        
+        $child_theme_dir = get_stylesheet_directory();
+
         $lcp_link_tags = array(
             //"<link rel='preload' fetchpriority='high' as='image' href='#' type='image/webp'>",
             //"<link rel='preload' fetchpriority='high' as='font' href='#' type='font/woff2' crossorigin='anonymous'>",
             //"<link rel='preload' fetchpriority='low' as='video' href='#' type='video/mp4'>",
+            "<link 
+            rel='preload' 
+            fetchpriority='high' 
+            as='font' href='#' 
+            type='font/woff2' 
+            crossorigin='anonymous'
+            >",
+
         );
 
         // Output preload link tags
@@ -54,6 +65,9 @@ class Wordpress {
                 // Dequeue global inline styles
                 wp_dequeue_style( 'global-styles' );
                 wp_dequeue_style( 'classic-theme-styles' );
+                // Remove link color setting
+                remove_filter( 'render_block', 'wp_render_elements_support', 10, 2 );
+                remove_filter( 'render_block', 'gutenberg_render_elements_support', 10, 2 );
             }
         }
     }

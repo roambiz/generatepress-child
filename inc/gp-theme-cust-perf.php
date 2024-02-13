@@ -23,7 +23,7 @@ class Html {
 
     public static function add_tags() {
         
-        $child_theme_dir = get_stylesheet_directory();
+        $child_theme_dir = get_stylesheet_directory_uri();
 
         $lcp_link_tags = array(
            /* *

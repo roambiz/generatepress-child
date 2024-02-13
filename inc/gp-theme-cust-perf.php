@@ -24,6 +24,7 @@ class Html {
     public static function add_tags() {
         
         $child_theme_dir = get_stylesheet_directory_uri();
+        // Define the local font file path 'Modify it to the font you need'.
         $local_font_path = '/assets/fonts/roboto/roboto-flex-v9-latin-regular.woff2';
 
 

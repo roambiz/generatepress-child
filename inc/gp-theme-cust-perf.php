@@ -24,6 +24,8 @@ class Html {
     public static function add_tags() {
         
         $child_theme_dir = get_stylesheet_directory_uri();
+        $local_font_path = '/assets/fonts/roboto/roboto-flex-v9-latin-regular.woff2';
+
 
         $lcp_link_tags = array(
            /* *
@@ -35,7 +37,7 @@ class Html {
             "<link 
             rel='preload' 
             fetchpriority='high' 
-            as='font' href='" . $child_theme_dir . "/assets/fonts/roboto/roboto-flex-v9-latin-regular.woff2' 
+            as='font' href='" . $child_theme_dir . $local_font_path . "' 
             type='font/woff2' 
             crossorigin='anonymous'
             >",

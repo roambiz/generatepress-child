@@ -27,7 +27,6 @@ class Html {
         // Define the local font file path 'Modify it to the font you need'.
         $local_font_path = '/assets/fonts/roboto/roboto-flex-v9-latin-regular.woff2';
 
-
         $lcp_link_tags = array(
            /* *
             * Preload tag example

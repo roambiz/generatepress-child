@@ -14,7 +14,7 @@ archive/*
 /.htaccess
 
 # scss
-*.scss
+/*.scss
 
 # All plugins
 #

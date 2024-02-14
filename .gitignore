@@ -13,6 +13,9 @@ archive/*
 # htaccess
 /.htaccess
 
+# scss
+*.scss
+
 # All plugins
 #
 # Note: If you wish to whitelist plugins,

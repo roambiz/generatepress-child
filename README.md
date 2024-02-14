@@ -5,12 +5,12 @@ Creating Child Themes with Stylistic Features for GeneratePress.
 Note：Development Convention: Consistent Use of Hyphen (-) for Naming
 > [Download 0.1.0](https://github.com/roambiz/generatepress-child/releases/tag/0.1.0)
 
-## 扩展包列表
+## Extensions
 
-#### 组件
+#### Components
 - Disabler
 - Facade
-#### 模块
+#### Modules
 - cust-css-preloading
 
 <!-- ---------- ---------- 我是分割线 ---------- ---------- -->
@@ -62,23 +62,25 @@ wp_enqueue_script(
 );
 ```
 
-## 你可能需要的一些代码片段
+// === Some Code Snippets You May Need === //
+>说明：
+>需要使用时，自行添加到[ functions.php ] 文件内，建议使用Code Snippet Manager。
 ```
 <?php
-// 删除默认的 readme.html 文件
+// Delete the default readme.html file
 if (is_file(ABSPATH . 'readme.html')) {
     unlink(ABSPATH . 'readme.html');
 }
 
-// 禁用 XML-RPC
+// Disable XML-RPC
 add_filter('xmlrpc_enabled', '__return_false');
 
-// 隐藏 WordPress 的版本号
+// Hide WordPress version number
 add_filter('the_generator', function() {
     return 'X';
 });
 
-// 禁用所有RSS
+// Disable all RSS feeds
 add_action('init', function() {
     $feed_actions = array(
         'do_feed',

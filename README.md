@@ -6,8 +6,12 @@ Note：Development Convention: Consistent Use of Hyphen (-) for Naming
 > [Download 0.1.0](https://github.com/roambiz/generatepress-child/releases/tag/0.1.0)
 
 ## 扩展包列表
+
+#### 组件
 - Disabler
 - Facade
+#### 模块
+- cust-css-preloading
 
 <!-- ---------- ---------- 我是分割线 ---------- ---------- -->
 
@@ -56,4 +60,43 @@ wp_enqueue_script(
         'in_footer' => true   
 	) 
 );
+```
+
+## 你可能需要的一些代码片段
+```
+<?php
+// 删除默认的 readme.html 文件
+if (is_file(ABSPATH . 'readme.html')) {
+    unlink(ABSPATH . 'readme.html');
+}
+
+// 禁用 XML-RPC
+add_filter('xmlrpc_enabled', '__return_false');
+
+// 隐藏 WordPress 的版本号
+add_filter('the_generator', function() {
+    return 'X';
+});
+
+// 禁用所有RSS
+add_action('init', function() {
+    $feed_actions = array(
+        'do_feed',
+        'do_feed_rdf',
+        'do_feed_rss',
+        'do_feed_rss2',
+        'do_feed_atom',
+        'do_feed_rss2_comments',
+        'do_feed_atom_comments',
+    );
+
+    foreach ($feed_actions as $action) {
+        add_action($action, function() {
+            wp_die(__('RSS feeds are disabled.'), '', array('response' => 404));
+        }, 1);
+    }
+
+    remove_action('wp_head', 'feed_links', 2);
+    remove_action('wp_head', 'feed_links_extra', 3);
+});
 ```

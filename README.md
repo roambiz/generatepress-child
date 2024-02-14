@@ -102,3 +102,7 @@ add_action('init', function() {
     remove_action('wp_head', 'feed_links_extra', 3);
 });
 ```
+// === Emergency Password Reset === //
+```
+https://wordpress.org/documentation/article/reset-your-password/
+```

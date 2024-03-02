@@ -36,9 +36,9 @@ add_action( 'wp_enqueue_scripts', function() {
         'popup-form-script', 
         get_stylesheet_directory_uri() . '/assets/js/popup-form-script.js', 
         array(), 
-        '1.0.0',
-        array(
-        'in_footer' => true
+        '1.0.0', 
+        array( 
+        'in_footer' => true 
 	    ) 
     );
     

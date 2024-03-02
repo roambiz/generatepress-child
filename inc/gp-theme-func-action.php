@@ -38,8 +38,7 @@ add_action( 'wp_enqueue_scripts', function() {
         array(), 
         '1.0.0',
         array(
-		'strategy' => 'async',
-        'in_footer' => true  
+        'in_footer' => true
 	    ) 
     );
     

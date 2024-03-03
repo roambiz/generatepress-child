@@ -10,7 +10,7 @@ const FractalPopup = {
     modalPopupContent: null,
     modalTriggerBtns: null,
     modalCloseBtn: null,
-    pageOverflow: document.querySelector('body'),
+    pageOverFlow: document.querySelector('body'),
     isInitialized: false,
 
     // Initialization method
@@ -24,7 +24,6 @@ const FractalPopup = {
 
     // Method to add event listeners
     addEventListeners: function() {
-        
         Array.from(this.modalTriggerBtns).forEach(btn => {
             btn.addEventListener('click', this.openModal.bind(this));
         });
@@ -40,22 +39,22 @@ const FractalPopup = {
     // Method to open the modal
     openModal: function() {
         if (this.modalPopupContent) {
-            this.modalPopupContent.style.display = 'block'; 
-            this.pageOverflow.style.overflow = 'hidden'; 
+            this.modalPopupContent.style.display = 'block';
+            this.pageOverFlow.style.overflow = 'hidden';
         }
     },
 
     // Method to close the modal
     closeModal: function() {
         if (this.modalPopupContent) {
-            this.modalPopupContent.style.display = 'none'; 
-            this.pageOverflow.style.overflow = 'auto'; 
+            this.modalPopupContent.style.display = 'none';
+            this.pageOverFlow.style.overflow = 'auto';
         }
     },
 
     // Method to handle outside click events
-    outsideClick: function(e) {
-        if (!this.modalPopupContent.contains(e.target)) {
+    outsideClick: function(evt) {
+        if (evt.target === this.modalPopupContent) {
             this.closeModal();
         }
     }
@@ -63,9 +62,13 @@ const FractalPopup = {
 
 // Initialization is triggered by the DOMContentLoaded event to ensure all DOM elements are loaded
 function loadScript() {
-    document.addEventListener('DOMContentLoaded', function() {
-        FractalPopup.init(); 
-    });
+    if (!FractalPopup.isInitialized) {
+        document.addEventListener('DOMContentLoaded', function() {
+            FractalPopup.init();
+        });
+    } else {
+        FractalPopup.init();
+    }
 }
 
 loadScript(); // Trigger the script loading

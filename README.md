@@ -106,3 +106,7 @@ add_action('init', function() {
 ```
 https://wordpress.org/documentation/article/reset-your-password/
 ```
+## 子主题定制项
+
+- 子主题有三个自定义文件(前缀为cust，分别是：块、性能、短代码)；初始化子主题时，需要修改自定义文件的配置。
+- 通过`[show_registered_block_slugs]`短代码打印已注册的块自行编辑。(注意：如果`样板`中的任一`块`被移除，样版将不会显示在编辑器界面内。)
